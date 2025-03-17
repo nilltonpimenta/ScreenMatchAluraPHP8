@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . "/functions.php";
+
 echo "Bem-vindo(a) ao Screen match!\n";
 
 $nomeFilme = "Top Gun - Maverick";
