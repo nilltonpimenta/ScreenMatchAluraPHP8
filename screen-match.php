@@ -10,7 +10,7 @@ $quantidadeDeNotas = $argc - 1;
 $notas = [];
 
 for ($contador = 1; $contador < $argc; $contador++) {
-    $notas[] = (float) $argv[$contador]; 
+    $notas[] = (float) $argv[$contador];
     //$notas[] e $notas[$contador - 1] é a msm coisa, nesse caso, se o Array estiver vazio por adiciona sempre no final
 }
 
@@ -30,11 +30,11 @@ if ($anoLancamento > 2022) {
 } else {
     echo "Esse filme não é um lançamento.\n";
 }
- 
+
 $genero = match ($nomeFilme) {
     "Top Gun - Maverick" => "ação",
-    "Thor: Ragnarok"=> "super-herói",
-    "Se beber não case"=> "comédia",
+    "Thor: Ragnarok" => "super-herói",
+    "Se beber não case" => "comédia",
     default => "Gênero não encontrado.",
 };
 
