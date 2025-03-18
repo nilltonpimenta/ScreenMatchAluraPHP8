@@ -45,3 +45,6 @@ $filme = [
 ];
 
 echo $filme["ano"];
+
+$filmeComoStringJson = json_encode($filme);
+file_put_contents(__DIR__ . '/filme.json', $filmeComoStringJson);
