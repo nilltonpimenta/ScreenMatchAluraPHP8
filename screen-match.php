@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . "/src/Modelo/Filme.php";
 require __DIR__ . "/src/functions.php";
 
 echo "Bem-vindo(a) ao Screen match!\n";
@@ -44,7 +45,7 @@ $filme = criaFilme(
     genero: "super-herói"
 );
 
-echo $filme["ano"];
+echo $filme->anoLancamento;
 
 $filmeComoStringJson = json_encode($filme);
 file_put_contents(__DIR__ . '/filme.json', $filmeComoStringJson);
