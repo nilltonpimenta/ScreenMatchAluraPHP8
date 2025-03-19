@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/functions.php";
+require __DIR__ . "/src/functions.php";
 
 echo "Bem-vindo(a) ao Screen match!\n";
 
