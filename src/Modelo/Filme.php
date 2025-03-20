@@ -3,7 +3,7 @@
 class Filme
 {
     public string $nome;
-    public int $anoLancamento;
+    private int $anoLancamento;
     public string $genero;
     private array $notas = [];
 
@@ -15,5 +15,15 @@ class Filme
     public function media(): float
     {
         return array_sum($this->notas) / count($this->notas);
+    }
+
+    public function getAnoLancamento(): int
+    {
+        return $this->anoLancamento;
+    }
+
+    public function setAnoLancamento(int $ano): void
+    {
+        $this->anoLancamento = $ano;
     }
 }
