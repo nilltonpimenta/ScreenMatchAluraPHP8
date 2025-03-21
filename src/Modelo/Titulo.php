@@ -21,4 +21,9 @@ class Titulo
     {
         return array_sum($this->notas) / count($this->notas);
     }
+
+    public function duracaoMinutos(): int
+    {
+        return 0;
+    }
 }
