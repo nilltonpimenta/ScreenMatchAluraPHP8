@@ -2,10 +2,15 @@
 
 class Filme
 {
-    public string $nome;
-    private int $anoLancamento;
-    public string $genero;
-    private array $notas = [];
+    private array $notas;
+
+    public function __construct(
+        public readonly string $nome,
+        public readonly int $anoLancamento,
+        public readonly string $genero
+    ) {
+        $this->notas = [];
+    }
 
     public function avaliar(float $nota): void
     {
@@ -15,15 +20,5 @@ class Filme
     public function media(): float
     {
         return array_sum($this->notas) / count($this->notas);
-    }
-
-    public function getAnoLancamento(): int
-    {
-        return $this->anoLancamento;
-    }
-
-    public function setAnoLancamento(int $ano): void
-    {
-        $this->anoLancamento = $ano;
     }
 }
